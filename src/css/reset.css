@@ -1,0 +1,48 @@
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select,
+figure,
+figcaption{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+
+}
+
+html,body{
+    font-size: .12rem;
+    font-family: "微软雅黑";
+
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+.clearFix:after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;  
+}

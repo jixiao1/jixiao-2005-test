@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表页</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <script src="../js/ajax.js"></script>
+    <script src="../lib/jquery.min.js"></script>
+    
+    <script src="../js/list.js"></script>
+    <script src="../lib/EasyLazyload.min.js"></script>
+</head>
+<body>
+    
+       <div id="header">
+           <div class="header_inner container clearFix">
+               <div class="header_left">
+                   <a href="./index.html" class="a1">
+                       <img src="../img/ss.png" alt="">
+                       <span>返回首页</span>
+                   </a>
+                   <a href="#" class="daohang ws">
+                       <span>网站导航</span>
+                       <div>
+                        <img src="../img/ss1.png" alt="">
+                        <img src="../img/ss2.png" alt="">
+                        
+                        </div>
+                       
+                     
+                   </a>
+                   <div class="d1">
+                    <dl>
+                        <dt>特色购物</dt>
+                        <dd><a href="#">苏宁互联</a></dd>
+                        <dd><a href="#">苏宁打卡</a></dd>
+                        <dd><a href="#">苏宁卡</a></dd>
+                        <dd><a href="#">苏宁国际</a></dd>
+                        <dd><a href="#">易回收</a></dd>
+                        <dd><a href="#">二手优品</a></dd>
+                        <dd><a href="#">领劵中心</a></dd>
+                        <dd><a href="#">苏宁</a></dd>
+                        <dd><a href="#">导航指南</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>主题频道</dt>
+                        <dd><a href="#">电器城</a></dd>
+                        <dd><a href="#">苏宁超市</a></dd>
+                        <dd><a href="#">手机</a></dd>
+                        <dd ><a href="#">运动馆</a></dd>
+                        <dd><a href="#">图书</a></dd>
+                        <dd><a href="#">红孩儿母婴</a></dd>
+                        <dd><a href="#">美妆个护</a></dd>
+                        <dd><a href="#">电脑</a></dd>
+                        <dd><a href="#">服装城</a></dd>
+                        <dd><a href="#">智能生活</a></dd>
+                        <dd><a href="#">家装馆</a></dd>
+                        <dd><a href="#">苏宁汽车</a></dd>
+                        <dd><a href="#">排行榜</a></dd>
+                        <dd><a href="#">医药馆</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>生活助手</dt>
+                        <dd><a href="#">零钱宝</a></dd>
+                        <dd><a href="#">手机充值</a></dd>
+                        <dd><a href="#">转账还款</a></dd>
+                        <dd><a href="#">约服务</a></dd>
+                        <dd><a href="#">水电煤</a></dd>
+                        <dd><a href="#">保险</a></dd>
+                        <dd><a href="#">机票</a></dd>
+                        <dd><a href="#">门店查询</a></dd>
+                        <dd><a href="#">酒店</a></dd>
+                        
+                    </dl>
+                    <dl>
+                        <dt>会员服务</dt>
+                        <dd><a href="#">会员联盟</a></dd>
+                        <dd><a href="#">延长保修</a></dd>
+                        <dd><a href="#">易付宝</a></dd>
+                        <dd><a href="#">苏宁理财</a></dd>
+                        <dd><a href="#">苏宁金融</a></dd>
+                       
+                        
+                    </dl>
+                    <dl style="border: none;">
+                        <dt>更多热点</dt>
+                        <dd><a href="#">PP视频</a></dd>
+                        <dd><a href="#">合作招商</a></dd>
+                        <dd><a href="#">苏宁联盟</a></dd>
+                        <dd><a href="#">用户体验</a></dd>
+                        <dd><a href="#">苏宁云</a></dd>
+                        <dd><a href="#">苏宁足球</a></dd>
+                        <dd><a href="#">苏宁有益</a></dd>
+                        <dd><a href="#">苏宁贷</a></dd>
+                       
+                        
+                    </dl>
+                    <div id="cuo">X</div>
+                    
+               </div>
+                   <a href="#" class="daohang1 ws">
+                    <span>商家入驻</span>
+                     <div>
+                       
+                     </div>
+                </a>
+                <a href="#" class="daohang2 ws">
+                    <span>客服服务</span>
+                     <div>
+                     
+                     </div>
+                </a>
+               </div>
+               <div class="header_right">
+                   <ul>
+                       <li><a href="./denglu.html">请登录</a></li>
+                       <li><a href="./register.html" class="current">注册有礼</a></li>
+                       <li><a href="#">我的订单</a></li>
+                       <li><a href="#">我的易购</a></li>
+                       <li><a href="#">苏宁会员</a></li>
+                       <li class="shopcar"><a href="#" class="current">购物车<span class="num">0</span></a>
+                          <div>
+                            
+                              <p>不要让你的购物车空着哦，快去逛逛吧</p>
+                              <p>如果您已添加过宝贝，那就赶紧登录查看吧</p>
+                              <a href="./denglu.html"><span>登录</span></a>
+                          </div>
+                      </li>
+                       <li><a href="#">易付宝</a></li>
+                       <li><a href="#">企业采购</a></li>
+                       <li class="shouji"><a href="#">手机苏宁
+                           <div class="lisyt">
+                                <div class="list1">
+                                    <img src="../img/pp.png" alt="">
+                                    <p>扫一扫</p>
+                                    <p>下载苏宁易购APP</p>
+                                </div>
+                                <div  class="list1">
+                                    <img src="../img/top2.jpg" alt="">
+                                    <p>关注苏宁推客公众号</p>
+                                    <p>自购省钱·分享赚钱</p>
+                                </div>
+                                <div  class="list1">
+                                    <img src="../img/top3.jpg" alt="">
+                                    <p>扫一扫</p>
+                                    <p>下载苏宁金融APP</p>
+                                </div>
+                                <div  class="list1">
+                                    <img src="../img/top4.png" alt="">
+                                    <p>扫一扫</p>
+                                    <p>关注苏宁易购服务号</p>
+                                </div>   
+                           </div>
+                       </a>
+                             
+                    
+                    </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       
+           <div class="main">
+            <div id="headerTop">
+                <div class="headerTop_inner clearFix container">
+                      <a href="#">
+                          <img src="../img/miaosha1.png" alt="">
+                      </a>
+                      <div class="page">
+                          <a href="index.html" class="pageIndex">首页</a>
+                          <a href="#" class="code">品牌惠</a>
+                      </div>
+                      <div class="beishu">
+                          <a href="#">
+                              <img src="../img/mia1.png" alt="" class="img">
+                          </a>
+                      </div>
+                </div>
+            </div>
+            <div id="nav">
+                <div class="nav_inner clearFix container">
+                    <ul>
+                        <li><a href="#">精选</a>
+                         <span class="cur"></span>
+                     </li>
+                        <li><a href="#">家纺百货</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">洗护</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">母婴</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">服饰鞋包</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">大家电</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">美妆</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">车品</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">医药保健</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">手机</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">食品</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">家装</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">数码</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">生鲜</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">家居</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">电脑办公</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">运动户外</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">酒水乳饮</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">小家电</a>
+                         <span></span>
+                     </li>
+                        <li><a href="#">二手优品</a>
+                         <span></span>
+                     </li>
+                       
+     
+                    </ul>
+                </div>
+            </div>
+            <div class="navtabggar">
+                <div class="navt_inner clearFix container">
+                    <div class="modal">
+                         <a href="#">默认</a>
+                    </div>
+                    <div  class="modal">
+                     <a href="#">销量</a>
+                </div>
+                  <div  class="modal">
+                      <a href="#">价格</a>
+                  </div>
+                   
+                     <div class="model">
+                         <input type="checkbox" >
+                         <span>今日上新</span>
+                     </div>
+                     <div class="model">
+                        <input type="checkbox" >
+                        <span>苏宁服务</span>
+                    </div>
+        
+                   </div>
+            </div>
+        </div>
+         
+
+      <div class="con container clearFix">
+           <!-- 这里是第一层 -->
+          <div class="col">
+              <!--这里是内部层 -->
+            <!-- <div>
+                <img src="../img/33.jpg" alt="">
+                <a href="#" class="wenzi"> 
+                荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+                <div class="item1">
+                     
+                     
+                    20W快充 自拍人像超级
+        
+        
+                </div>
+                <div class="mg1">
+                     <div class="left">
+                         <div class="left_1">
+                               <span>￥</span>
+                               <p>1099</p>
+                         </div>
+                         <div class="left_2">
+                             <div>
+                                 <div>
+                                    <i>￥</i>
+                                      1499
+                                 </div>
+                                 <span>已抢7244</span>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     <div class="right">立即抢购</div>
+                    
+                </div>
+
+            </div>
+            <div>
+                <img src="../img/33.jpg" alt="">
+                <a href="#" class="wenzi"> 
+                荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+                <div class="item1">
+                     
+                     
+                    20W快充 自拍人像超级
+        
+        
+                </div>
+                <div class="mg1">
+                     <div class="left">
+                         <div class="left_1">
+                               <span>￥</span>
+                               <p>1099</p>
+                         </div>
+                         <div class="left_2">
+                             <div>
+                                 <div>
+                                    <i>￥</i>
+                                      1499
+                                 </div>
+                                 <span>已抢7244</span>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     <div class="right">立即抢购</div>
+                    
+                </div>
+
+            </div>
+            <div>
+                <img src="../img/33.jpg" alt="">
+                <a href="#" class="wenzi"> 
+                荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+                <div class="item1">
+                     
+                     
+                    20W快充 自拍人像超级
+        
+        
+                </div>
+                <div class="mg1">
+                     <div class="left">
+                         <div class="left_1">
+                               <span>￥</span>
+                               <p>1099</p>
+                         </div>
+                         <div class="left_2">
+                             <div>
+                                 <div>
+                                    <i>￥</i>
+                                      1499
+                                 </div>
+                                 <span>已抢7244</span>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     <div class="right">立即抢购</div>
+                    
+                </div>
+
+            </div>
+            <div>
+                <img src="../img/33.jpg" alt="">
+                <a href="#" class="wenzi"> 
+                荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+                <div class="item1">
+                     
+                     
+                    20W快充 自拍人像超级
+        
+        
+                </div>
+                <div class="mg1">
+                     <div class="left">
+                         <div class="left_1">
+                               <span>￥</span>
+                               <p>1099</p>
+                         </div>
+                         <div class="left_2">
+                             <div>
+                                 <div>
+                                    <i>￥</i>
+                                      1499
+                                 </div>
+                                 <span>已抢7244</span>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     <div class="right">立即抢购</div>
+                    
+                </div>
+
+            </div>
+            <div>
+                <img src="../img/33.jpg" alt="">
+                <a href="#" class="wenzi"> 
+                荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+                <div class="item1">
+                     
+                     
+                    20W快充 自拍人像超级
+        
+        
+                </div>
+                <div class="mg1">
+                     <div class="left">
+                         <div class="left_1">
+                               <span>￥</span>
+                               <p>1099</p>
+                         </div>
+                         <div class="left_2">
+                             <div>
+                                 <div>
+                                    <i>￥</i>
+                                      1499
+                                 </div>
+                                 <span>已抢7244</span>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     <div class="right">立即抢购</div>
+                    
+                </div>
+
+            </div>
+            <div>
+                <img src="../img/33.jpg" alt="">
+                <a href="#" class="wenzi"> 
+                荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+                <div class="item1">
+                     
+                     
+                    20W快充 自拍人像超级
+        
+        
+                </div>
+                <div class="mg1">
+                     <div class="left">
+                         <div class="left_1">
+                               <span>￥</span>
+                               <p>1099</p>
+                         </div>
+                         <div class="left_2">
+                             <div>
+                                 <div>
+                                    <i>￥</i>
+                                      1499
+                                 </div>
+                                 <span>已抢7244</span>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     <div class="right">立即抢购</div>
+                    
+                </div>
+
+            </div>
+            <div>
+                <img src="../img/33.jpg" alt="">
+                <a href="#" class="wenzi"> 
+                荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+                <div class="item1">
+                     
+                     
+                    20W快充 自拍人像超级
+        
+        
+                </div>
+                <div class="mg1">
+                     <div class="left">
+                         <div class="left_1">
+                               <span>￥</span>
+                               <p>1099</p>
+                         </div>
+                         <div class="left_2">
+                             <div>
+                                 <div>
+                                    <i>￥</i>
+                                      1499
+                                 </div>
+                                 <span>已抢7244</span>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     <div class="right">立即抢购</div>
+                    
+                </div>
+
+            </div>
+            <div>
+                <img src="../img/33.jpg" alt="">
+                <a href="#" class="wenzi"> 
+                荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+                <div class="item1">
+                     
+                     
+                    20W快充 自拍人像超级
+        
+        
+                </div>
+                <div class="mg1">
+                     <div class="left">
+                         <div class="left_1">
+                               <span>￥</span>
+                               <p>1099</p>
+                         </div>
+                         <div class="left_2">
+                             <div>
+                                 <div>
+                                    <i>￥</i>
+                                      1499
+                                 </div>
+                                 <span>已抢7244</span>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     <div class="right">立即抢购</div>
+                    
+                </div>
+
+            </div> -->
+        </div>
+
+
+
+        <div class="col">
+            <!--这里是内部层 -->
+          <!-- <div>
+            <img src="../img/33.jpg" alt="">
+              <a href="#" class="wenzi"> 
+              荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+              <div class="item1">
+                   
+                   
+                  20W快充 自拍人像超级
+      
+      
+              </div>
+              <div class="mg1">
+                   <div class="left">
+                       <div class="left_1">
+                             <span>￥</span>
+                             <p>1099</p>
+                       </div>
+                       <div class="left_2">
+                           <div>
+                               <div>
+                                  <i>￥</i>
+                                    1499
+                               </div>
+                               <span>已抢7244</span>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="right">立即抢购</div>
+                  
+              </div>
+
+          </div>
+          <div>
+            <img src="../img/33.jpg" alt="">
+              <a href="#" class="wenzi"> 
+              荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+              <div class="item1">
+                   
+                   
+                  20W快充 自拍人像超级
+      
+      
+              </div>
+              <div class="mg1">
+                   <div class="left">
+                       <div class="left_1">
+                             <span>￥</span>
+                             <p>1099</p>
+                       </div>
+                       <div class="left_2">
+                           <div>
+                               <div>
+                                  <i>￥</i>
+                                    1499
+                               </div>
+                               <span>已抢7244</span>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="right">立即抢购</div>
+                  
+              </div>
+
+          </div>
+          <div>
+            <img src="../img/33.jpg" alt="">
+              <a href="#" class="wenzi"> 
+              荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+              <div class="item1">
+                   
+                   
+                  20W快充 自拍人像超级
+      
+      
+              </div>
+              <div class="mg1">
+                   <div class="left">
+                       <div class="left_1">
+                             <span>￥</span>
+                             <p>1099</p>
+                       </div>
+                       <div class="left_2">
+                           <div>
+                               <div>
+                                  <i>￥</i>
+                                    1499
+                               </div>
+                               <span>已抢7244</span>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="right">立即抢购</div>
+                  
+              </div>
+
+          </div>
+          <div>
+            <img src="../img/1.jpg" alt="">
+              <a href="#" class="wenzi"> 
+              荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+              <div class="item1">
+                   
+                   
+                  20W快充 自拍人像超级
+      
+      
+              </div>
+              <div class="mg1">
+                   <div class="left">
+                       <div class="left_1">
+                             <span>￥</span>
+                             <p>1099</p>
+                       </div>
+                       <div class="left_2">
+                           <div>
+                               <div>
+                                  <i>￥</i>
+                                    1499
+                               </div>
+                               <span>已抢7244</span>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="right">立即抢购</div>
+                  
+              </div>
+
+          </div>
+          <div>
+            <img src="../img/1.jpg" alt="">
+              <a href="#" class="wenzi"> 
+              荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+              <div class="item1">
+                   
+                   
+                  20W快充 自拍人像超级
+      
+      
+              </div>
+              <div class="mg1">
+                   <div class="left">
+                       <div class="left_1">
+                             <span>￥</span>
+                             <p>1099</p>
+                       </div>
+                       <div class="left_2">
+                           <div>
+                               <div>
+                                  <i>￥</i>
+                                    1499
+                               </div>
+                               <span>已抢7244</span>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="right">立即抢购</div>
+                  
+              </div>
+
+          </div>
+          <div>
+            <img src="../img/33.jpg" alt="">
+              <a href="#" class="wenzi"> 
+              荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+              <div class="item1">
+                   
+                   
+                  20W快充 自拍人像超级
+      
+      
+              </div>
+              <div class="mg1">
+                   <div class="left">
+                       <div class="left_1">
+                             <span>￥</span>
+                             <p>1099</p>
+                       </div>
+                       <div class="left_2">
+                           <div>
+                               <div>
+                                  <i>￥</i>
+                                    1499
+                               </div>
+                               <span>已抢7244</span>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="right">立即抢购</div>
+                  
+              </div>
+
+          </div>
+          <div>
+            <img src="../img/33.jpg" alt="">
+              <a href="#" class="wenzi"> 
+              荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+              <div class="item1">
+                   
+                   
+                  20W快充 自拍人像超级
+      
+      
+              </div>
+              <div class="mg1">
+                   <div class="left">
+                       <div class="left_1">
+                             <span>￥</span>
+                             <p>1099</p>
+                       </div>
+                       <div class="left_2">
+                           <div>
+                               <div>
+                                  <i>￥</i>
+                                    1499
+                               </div>
+                               <span>已抢7244</span>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="right">立即抢购</div>
+                  
+              </div>
+
+          </div>
+          <div>
+            <img src="../img/33.jpg" alt="">
+              <a href="#" class="wenzi"> 
+              荣耀20青春（LRA-AL00） 6+64GB 蓝水翡翠 全网通智能手机</a>
+              <div class="item1">
+                   
+                   
+                  20W快充 自拍人像超级
+      
+      
+              </div>
+              <div class="mg1">
+                   <div class="left">
+                       <div class="left_1">
+                             <span>￥</span>
+                             <p>1099</p>
+                       </div>
+                       <div class="left_2">
+                           <div>
+                               <div>
+                                  <i>￥</i>
+                                    1499
+                               </div>
+                               <span>已抢7244</span>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="right">立即抢购</div>
+                  
+              </div>
+
+          </div> -->
+      </div>
+      </div>
+
+    
+       
+ 
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
+    
+    <script src="../js/register.js"></script>
+    <!-- <script src="../js/ajax.js"></script>
+    <script src="../js/cookie.js"></script> -->
+</head>
+<body>
+   <div id="box">
+       <div class="header clearFix">
+            <div class="logo"></div>
+            <div class="hunaying">欢迎注册</div>
+            <a href="denglu.html">我已经注册，马上登录></a>
+       </div>
+       <div class="main">
+           <div class="content clearFix" style="z-index: 1;">
+            <div class="mheade">
+                <i></i>
+                <span>注册领</span>
+               <em>199</em>   
+               <span>元大礼包</span>
+             </div> 
+             <form>
+                <div>
+                    <span>用户名:</span>
+                    <input type="text" id="username" name="username" oninput="Username()" > 
+                    <!-- <input type="text" id="username" name="username"> -->
+                </div>
+                <span class="list">用户名必须是6-8位的字母数字或者下划线</span>
+               <div>
+                <span>手机号:</span>
+                <input type="text" id="userphone" name="userphone" oninput="UserPhone()">
+                <!-- <input type="text" id="userphone" name="userphone"> -->
+                
+            </div>
+            <span class="list">手机号码 必须以数字1开头,11为数字组成</span>
+              <div>
+                <span>密码:</span>
+                <input type="password" id="password" name="password" oninput="checkPassword()" > 
+                  <!-- <input type="password" id="password" name="password" > -->
+              </div>
+                 
+                <span class="list">密码必须是8-12的字母,数字或者特殊符号</span>
+              
+                
+                <input type="submit" value="提交注册" id="zhuce">
+            </form>
+      
+       <div class="iconv clearFix">
+           <i></i>
+           <span>企业用户注册></span>
+       </div>
+           </div>
+           
+       </div>
+   </div>
+   <div class="footend">
+    <div class="footend_inner">
+        <p class="p1">
+            <a href="#">苏宁互联</a>
+            <span>|</span>
+            <a href="#">苏宁金融</a>
+            <span>|</span>
+            <a href="#">苏宁支付</a>
+            <span>|</span>
+            <a href="#">PP视频</a>
+            <span>|</span>
+            <a href="#">红孩子</a>
+            <span>|</span>
+            <a href="#">苏宁物流</a>
+            <span>|</span>
+            <a href="#">手机苏宁 </a>
+            <span>|</span>
+            <a href="#">零售云</a>
+            <span>|</span>
+            <a href="#">苏宁云</a>
+            <span>|</span>
+            <a href="#">知识产权举报</a>
+            <span>|</span>
+            <a href="#">投资者关系 </a>
+            <span>|</span>
+            <a href="#">苏宁智能</a>
+            <span>|</span>
+        </p>
+        <p class="p2">
+          <a href="#">联系我们</a>
+          <span>|</span>
+          <a href="#">诚聘英才</a>
+          <span>|</span>
+          <a href="#">合作招商</a>
+          <span>|</span>
+          <a href="#">广告平台</a>
+          <span>|</span>
+          <a href="#">苏宁联盟</a>
+          <span>|</span>
+          <a href="#">苏宁招标</a>
+          <span>|</span>
+          <a href="#">隐私政策 </a>
+          <span>|</span>
+          <a href="#">用户体验提升计划</a>
+          <span>|</span>
+          <a href="#">股东会员认证</a>
+         </p>
+       
+         <p class="copy">
+             <a href="#">Copyright© 2002-2020，
+                 苏宁易购集团股份有限公司版权所有</a>
+                 <a href="#">
+                     <span>|</span>
+                     <img data-lazy-src="img/gb.png" alt="">
+                    
+                     <a href="#">苏ICP备10207551号-4</a>
+                  </a>
+                  <a href="#">
+                      <span>|</span>
+                      <a href="#">苏ICP备10207551号-4</a>
+                  </a>
+
+         </p>
+         <p class="copy">
+          <a href="#">合字B2-20180025</a>
+              <a href="#">
+                  <span>|</span>
+                  合字A1.B1.B2-20180017
+              </a>
+               <a href="#">
+                   <span>|</span>
+                   <a href="#">出版物经营许可证新出发苏批字第A-243号</a>
+               </a>
+               <a href="#">
+                  <span>|</span>
+                  <a href="#">互联网药品信息服务资格证书</a>
+              </a>
+              <a href="#">
+            
+                  <a href="#" style="margin-left: -20px;">（苏）-非经营性-2016-0005</a>
+              </a>
+
+      </p>
+      <p class="copy">
+          <a href="#">经营证照</a>
+              <a href="#">
+                  <span>|</span>
+                  网络文化经营许可证：苏网文〔2018〕10580-203号
+              </a>
+               <a href="#">
+                   <span>|</span>
+                   <a href="#">互联网违法和不良信息举报邮箱：kfpt-yy@cnsuning.com</a>
+               </a>
+               <a href="#">
+                  <span>|</span>
+                  <a href="#">举报电话：02566996699-865948</a>
+              </a>
+            
+      </p>
+      <p class="copy">
+          <a href="#">医疗器械网络交易服务第三方平台备案凭证-（苏）网械平台备字（2018）第00052号</a>
+              
+            
+      </p>
+      <p class="copy">
+          <a href="#">本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</a>
+              
+            
+      </p>
+      <p class="map">
+          <img src="../img/wang.png" alt="">
+          <img src="../img/wang2.png" alt="">
+          <img src="../img/wang3.png" alt="">
+          <img src="../img/wang4.jpg" alt="">
+          <img src="../img/wang5.png" alt="">
+      </p>
+   
+    </div>
+</div>
+<div class="body" style="display: block;">
+    <div class="content_body">
+       <div class="content_tile">
+           <span>注册协议</span>
+           <a href="#"></a>
+       </div>
+       <div class="content_btent">
+        <p>
+            【<b>审慎阅读</b>】您在申请注册流程中点击同意前，应当认真阅读以下协议。<b>请您务必审慎阅读、充分理解协议中相关条款内容，其中包括</b>：<br>
+            <b>1. 与您约定免除或限制责任的条款；</b><br>
+            <b>2. 与您约定法律适用和管辖的条款；</b><br>
+            <b>3. 其他以粗体下划线标识的重要条款。</b>
+        </p>
+        <p style="margin-top:22px;">
+            如您对协议有任何疑问，可向平台客服咨询。<br>
+            【<b>特别提示</b>】当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。
+        </p>
+        <p style="margin-top:22px;">
+            <b>阅读协议的过程中，如果您不同意相关协议或其中任何条款约定，您应立即停止注册程序。</b><br>
+            <a href="#" target="_blank">《苏宁会员章程》</a><br>
+            <a href="#" target="_blank">《易付宝协议》</a><br>
+            <a href="#">《苏宁隐私政策》</a><br>
+            <a href="#" target="_blank">《易付宝隐私政策》</a><br>
+            <a href="#" target="_blank">《苏宁联盟在线协议》</a><br>
+        </p>
+        <a href="javascript:void(0)" class="agree-btn">同意并继续</a>
+       </div>
+    </div>
+</div>
+
+<script src="../lib/jquery.min.js"></script>
+    <script>
+      //1 书写监测用户名的函数
+      var lists=document.querySelectorAll(".list");
+        
+        //1 书写监测用户名的函数
+        function Username(){
+            var reg = /^\w{6,8}$/;
+            //获取的输入的用户名
+            var username = document.querySelector('#username').value;
+            if(reg.test(username)){
+                //如果输入的用户名符合正则,正确
+                lists[0].innerHTML = "用户名可以注册";
+                lists[0].style.color="green";
+                return true;
+            }else{
+                //如果输入的用户名不符合正则,错误
+                lists[0].innerHTML = '用户名必须是6-8位的字母数字或者下划线';
+                lists[0].style.color="red";
+                return false;
+            }
+        }
+        function UserPhone(){
+            var reg =/^1([38]\d|5[0-35-9]|7[3678])\d{8}$/;
+            //获取的输入的手机号
+            var userphone= document.querySelector('#userphone').value;
+          
+           
+            if(reg.test(userphone)){
+                //如果输入的手机号符合正则,正确
+                lists[1].innerHTML = "手机号码可以注册";
+                lists[1].style.color="green";
+                return true;
+            }else{
+                //如果输入的手机号不符合正则,错误
+                lists[1].innerHTML = '手机号码必须是以数字开头,11位数字组成';
+                lists[1].style.color="red";
+                return false;
+            }
+        }
+          
+        
+        //2 书写监测密码强度的函数
+        function checkPassword(){
+            /* 
+                定义一个高强度密码的标准
+                    1 8到12位:/^[\w~!@#$%^&*]{8,12}$/
+                    2 有数字
+                    3 有大写字母
+                    4 有小写字母
+                    5 有特殊符号
+                定义一个低强度密码的标准
+                    密码必须是8-12的字母,数字或者特殊符号:/^[\w~!@#$%^&*]{8,12}$/
+            */
+            //获取输入的密码
+            var password = document.querySelector('#password').value;
+            //监测密码
+            if(/^[\w~!@#]{8,12}$/.test(password)&&/\d+/.test(password)&&/[A-Z]+/.test(password)&&/[a-z]+/.test(password)&&/[~!@#]+/.test(password)){
+                lists[2].innerHTML = "密码强度高";
+                lists[2].style.color="green";
+                return true
+            }
+            if(/^[\w~!@#]{8,12}$/.test(password)){
+                lists[2].innerHTML = "密码强度低";
+                lists[2].style.color="gray";
+                return true
+            }else{
+                lists[2].innerHTML = '密码必须是8-12的字母,数字或者特殊符号';
+                lists[2].style.color="red";
+                return false;
+            }		
+    
+        }
+        
+        
+        var form=document.querySelector("form");
+         form.onsubmit= function(e){
+                 e=window.event||e;
+                 e.preventDefault?e.preventDefault():e.returnValue=false;
+                
+              if((Username()&&UserPhone()&&checkPassword())){
+                var username = document.querySelector('#username').value;
+                var userphone= document.querySelector('#userphone').value;
+                var password = document.querySelector('#password').value;
+               
+                 $.ajax({
+                     url:"../../register.php",
+                     methods:"post",
+                     data:{
+                        username:username,
+                        phone:userphone,
+                        password:password
+
+                     },
+                     success:function(data){
+                          // console.log(data);
+                           var obj=JSON.parse(data);
+                          // console.log(obj);
+                        //    console.log(obj);
+                        //    console.log(obj['detail']);
+                        alert(obj['detail']);
+                      var ac=obj['detail'];
+                       if(ac==="注册成功"){
+                        setTimeout(function(){
+									location.href = "./denglu.html";
+								}, 2000);
+                       }
+                      
+                     }
+                 })
+                
+                    
+                 
+                }
+          
+            
+        }
+    </script>  
+</body>
+</html>

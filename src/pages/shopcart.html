@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车页面</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/comon.css">
+    <link rel="stylesheet" href="../css/shopcart.css">
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../js/cartshop.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script>
+       
+    </script>
+</head>
+<body>
+     <!-- 这里是头部 -->
+    <div id="navheader">
+        <div class="nav">
+            <ul>
+                <li class="firstli"><a href="#">网站导航</a><span class="cur">></span>
+                   <div class="d1">
+                        <dl>
+                            <dt>特色购物</dt>
+                            <dd><a href="#">苏宁互联</a></dd>
+                            <dd><a href="#">苏宁打卡</a></dd>
+                            <dd><a href="#">苏宁卡</a></dd>
+                            <dd><a href="#">苏宁国际</a></dd>
+                            <dd><a href="#">易回收</a></dd>
+                            <dd><a href="#">二手优品</a></dd>
+                            <dd><a href="#">领劵中心</a></dd>
+                            <dd><a href="#">苏宁</a></dd>
+                            <dd><a href="#">导航指南</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>主题频道</dt>
+                            <dd><a href="#">电器城</a></dd>
+                            <dd><a href="#">苏宁超市</a></dd>
+                            <dd><a href="#">手机</a></dd>
+                            <dd style="margin:0 20px;"><a href="#">运动馆</a></dd>
+                            <dd><a href="#">图书</a></dd>
+                            <dd><a href="#">红孩儿母婴</a></dd>
+                            <dd><a href="#">美妆个护</a></dd>
+                            <dd><a href="#">电脑</a></dd>
+                            <dd><a href="#">服装城</a></dd>
+                            <dd><a href="#">智能生活</a></dd>
+                            <dd><a href="#">家装馆</a></dd>
+                            <dd><a href="#">苏宁汽车</a></dd>
+                            <dd><a href="#">排行榜</a></dd>
+                            <dd><a href="#">医药馆</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>生活助手</dt>
+                            <dd><a href="#">零钱宝</a></dd>
+                            <dd><a href="#">手机充值</a></dd>
+                            <dd><a href="#">转账还款</a></dd>
+                            <dd><a href="#">约服务</a></dd>
+                            <dd><a href="#">水电煤</a></dd>
+                            <dd><a href="#">保险</a></dd>
+                            <dd><a href="#">机票</a></dd>
+                            <dd><a href="#">门店查询</a></dd>
+                            <dd><a href="#">酒店</a></dd>
+                            
+                        </dl>
+                        <dl>
+                            <dt>会员服务</dt>
+                            <dd><a href="#">会员联盟</a></dd>
+                            <dd><a href="#">延长保修</a></dd>
+                            <dd><a href="#">易付宝</a></dd>
+                            <dd><a href="#">苏宁理财</a></dd>
+                            <dd><a href="#">苏宁金融</a></dd>
+                           
+                            
+                        </dl>
+                        <dl style="border: none;">
+                            <dt>更多热点</dt>
+                            <dd><a href="#">PP视频</a></dd>
+                            <dd><a href="#">合作招商</a></dd>
+                            <dd><a href="#">苏宁联盟</a></dd>
+                            <dd><a href="#">用户体验</a></dd>
+                            <dd><a href="#">苏宁云</a></dd>
+                            <dd><a href="#">苏宁足球</a></dd>
+                            <dd><a href="#">苏宁有益</a></dd>
+                            <dd><a href="#">苏宁贷</a></dd>
+                           
+                            
+                        </dl>
+                        <div id="cuo">X</div>
+                        
+                   </div>
+                   
+           
+       
+           
+                
+                </li>
+                <li class="two"><a href="#">商家入驻</a><span class="cur">></span>
+                     <div class="sj_title">
+                        <p><a href="#">合作招商</a></p>
+                        <p><a href="#">服务市场</a></p>
+                        <p><a href="#">金融中心</a></p>
+                        <p><a href="#">培训中心</a></p>
+                        <p><a href="#">易通天下</a></p>
+                        <p><a href="#">规则中心</a></p>
+                        <p><a href="#">规则众议院</a></p>
+                    </div> 
+                </li>
+                <li class="three"><a href="#">客户服务</a><span class="cur">></span>
+                    <div class="kehu">
+                        <p><a href="#">苏宁帮客</a></p>
+                        <p><a href="#">帮客中心</a></p>
+                        <p><a href="#">查找门店</a></p>
+                        <p><a href="#">退换/维修</a></p>
+                        <p><a href="#">苏宁帮客</a></p>
+                        <p><a href="#">意见反馈</a></p>
+                        <p><a href="#">30天包退</a></p>
+                        <p><a href="#">在线咨询</a></p>
+                    </div>
+                
+                </li>
+            </ul>
+            <div class="right">
+                 <a href="denglu.html" class="login">请登录</a>
+                 <a href="register.html" class="register">注册有礼</a>
+                 <span class="cc">我的订单<span class="icon">></span>
+                   <div class="code">
+                    <p><a href="#">待支付</a></p>
+                    <p><a href="#">待收货</a></p>
+                    <p><a href="#">待评价</a></p>
+                    <p><a href="#">修改订单</a></p>
+                   </div>
+                </span>
+                 <span class="yigo">我的易购<span class="icon">></span>
+                
+                    <div class="yigogo">
+                        <a href="#"><img src="../img/01.jpg" alt=""></a>
+                        <p class="xiaoxi"><a href="#">请登录</a></p>
+                        <p><a href="#">我的消息</a></p>
+                        <p><a href="#">我的关注</a></p>
+                        <p><a href="#">我的金融</a></p>
+                        <p><a href="#">苏宁会员</a></p>
+                        <p><a href="#">我的任性付</a></p>
+                        <p><a href="#">我的优惠券</a></p>
+                    </div>
+                </span>
+                 <span>苏宁会员 <span class="icon">></span></span>
+                 <span>购物车<a href="#" style="margin-left: 3px;" class="ling"></a></span>
+                 <span class="shouye"  style="cursor: pointer;">首页</span>
+                 <a href="list.html" style="color: #333333;"><span>列表页的展示</span></a>
+                 <span class="shouji">手机苏宁 <span class="icon">></span>
+                     <div class="shoup">
+                         <div class="tupian">
+                             <a href="#">
+                                <img src="../img/top1.jpg" alt="">
+                                <p><a href="#">扫一扫</a></p>
+                                <p class="gtow"><a href="#">下载苏宁易购App</a></p>
+                             </a>
+                             
+                         </div>
+                         <div class="tupian">
+                             <a href="#">
+                                <img src="../img/top2.jpg" alt="">
+                                <p><a href="#">关注苏宁推客公众号</a></p>
+                                <p class="gtow"><a href="#">下载苏宁易购App自</a></p>
+                             </a>
+                           
+                        </div>
+                        <div class="tupian">
+                            <a href="#">
+                                <img src="../img/top3.jpg" alt="">
+                            <p><a href="#">扫一扫</a></p>
+                            <p class="gtow"><a href="#">下载苏宁金融APP</a></p>
+                            </a>
+                            
+                        </div>
+                        <div class="tupian">
+                            <a href="#">
+                                <img src="../img/top4.png" alt="">
+                                <p><a href="#">扫一扫</a></p>
+                                <p class="gtow"><a href="#">关注苏宁易购服务号</a></p>
+                            </a>
+                           
+                        </div>
+                     </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_inner container clearFix">
+            <div class="main_left">
+                  <a href="#"><img src="../img/logosuning.png" alt=""></a>
+            </div>
+            <div class="main_right">
+                <input type="text"  class="txt1">
+                <div class="input">搜索</div>
+            </div>
+        </div>
+    </div>
+       <div class="mincontent">
+           <div class="mincontent_inner container">
+               <!-- 这里是购物车的头部 -->
+               <div class="min-title">
+                   <div class="dd1">
+                       <input type="checkbox" class="checkAll">
+                       <span>全选</span>
+                   </div>
+                   <div class="left_title">
+                       商品信息
+                   </div>
+                   <div class="left_title">
+                    规格
+                </div>
+                <div class="left_title">
+                    单价（元）
+                </div>
+                <div class="left_title">
+                    数量
+                </div>
+                <div class="left_title">
+                    小计（元）
+                </div>
+                <div class="left_title">
+                    操作
+                </div>
+               </div>
+               <div class="min-content">
+                   <!-- 这里是购物车的主体部分-->
+                   <div class="mins">
+                       <!-- 这里是购物车的页面 -->
+                    <div class="min-item">
+                        <!-- <div class="min-item-s">
+
+                            <div class="inp">
+                                <input type="checkbox" class="j-checkbox">
+                            </div>
+                            <div class="list1">
+                                <img src="../img/tu1.jpg" alt="" style="width: 80px; height: 80px;">
+                                <div class="xinxi">
+                                    <p class="info">
+                                        【送网红胖胖杯】蒲草茶坊水果茶果干新鲜纯手工袋装网红水果片茶冷泡果粒茶100g/盒
+                                    </p>
+                                    <div class="xuzn">选购增值服务</div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span class="priceNUm">￥14.8</span>
+                                <span class="chu">促销价</span>
+                            </div>
+                            <div class="jiajian">
+                                <span class="del">-</span>
+                                <input type="text" value="1" max="99" class="num">
+                                <span  class="jia">+</span>
+                            </div>
+                            <div class="count">￥14.8</div>
+                            <a href="javascript:;"  class="remove">删除</a>
+                        </div>
+                        <div class="min-item-s">
+                         
+                            <div class="inp">
+                                <input type="checkbox"  class="j-checkbox">
+                            </div>
+                            <div class="list1">
+                                <img src="../img/tu2.jpg" alt="" style="width: 80px; height: 80px;">
+                                <div class="xinxi">
+                                    <p class="info">
+                                        【送网红胖胖杯】蒲草茶坊水果茶果干新鲜纯手工袋装网红水果片茶冷泡果粒茶100g/盒
+                                    </p>
+                                    <div class="xuzn">选购增值服务</div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span class="priceNUm">￥14.8</span>
+                                <span class="chu">促销价</span>
+                            </div>
+                            <div class="jiajian">
+                                <span class="del">-</span>
+                                <input type="text" value="1" max="99" class="num">
+                                <span  class="jia">+</span>
+                            </div>
+                            <div class="count">￥14.8</div>
+                            <a href="javascript:;"  class="remove">删除</a>
+                        </div> -->
+                    </div>
+                     
+                   </div>
+                   
+               </div>
+           </div>
+       </div>
+       <div class="countlist container clearFix">
+           <div class="quan">
+               <input type="checkbox" class="checkAll">
+               <span>全选</span>
+           </div>
+           <a href="#">删除选中的商品</a>
+           <div class="clear">清除购物车</div>
+           <div class="jianshu">已选商品<span>0</span>件</div>
+           <div class="jiancount">总价（含运费）：<span>00:00</span></div>
+          <div class="qujiesuan">去结算<a href="#"></a></div>
+        </div>
+        <div class="tulist container">
+           <a href="#">
+               <img src="../img/ximenzi.jpg" alt="">
+           </a>
+        </div>
+        <div class="menuList">
+            <div class="menulist_inner container">
+              <div class="title">猜你喜欢</div>
+                  <div class="listMenus">
+                      <div class="listyu">
+                          <img src="../img/list.png" alt="">
+                            
+                                <div class="price_item clearFix">
+                                    <i>￥</i>
+                                    <em  class="big">180</em>
+                                    <em class="small">.00</em>
+                                    <span class="bid" style="display: none;">1</span>
+                                    
+                                </div>
+                            
+                          <div class="listinfo">
+                              <a href="#" 
+                              title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                  【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                                </a>
+                          </div>
+                          <a href="#" class="inlist">
+                              <img src="../img/iconshop.png" alt="">
+                              <span>加入购物车</span>
+                          </a>
+                      </div>
+                      <div class="listyu">
+                        <img src="../img/list.png" alt="">
+                        <div class="price_item clearFix">
+                            <i>￥</i>
+                            <em  class="big">180</em>
+                            <em class="small">.00</em>
+                            <span class="bid" style="display: none;">2</span>
+                        </div>
+                        <div class="listinfo">
+                            <a href="#" 
+                            title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                              </a>
+                        </div>
+                        <a href="#" class="inlist">
+                            <img src="../img/iconshop.png" alt="">
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                    <div class="listyu">
+                        <img src="../img/list.png" alt="">
+                        <div class="price_item clearFix">
+                            <i>￥</i>
+                            <em  class="big">180</em>
+                            <em class="small">.00</em>
+                            <span class="bid" style="display: none;">3</span>
+                        </div>
+                        <div class="listinfo">
+                            <a href="#" 
+                            title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                              </a>
+                        </div>
+                        <a href="#" class="inlist">
+                            <img src="../img/iconshop.png" alt="">
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                    <div class="listyu">
+                        <img src="../img/list.png" alt="">
+                        <div class="price_item clearFix">
+                            <i>￥</i>
+                            <em  class="big">180</em>
+                            <em class="small">.00</em>
+                            <span class="bid" style="display: none;">4</span>
+                        </div>
+                        <div class="listinfo">
+                            <a href="#" 
+                            title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                              </a>
+                        </div>
+                        <a href="#" class="inlist">
+                            <img src="../img/iconshop.png" alt="">
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                    <div class="listyu">
+                        <img src="../img/list.png" alt="">
+                        <div class="price_item clearFix">
+                            <i>￥</i>
+                            <em  class="big">180</em>
+                            <em class="small">.00</em>
+                            <span class="bid" style="display: none;">1</span>
+                        </div>
+                        <div class="listinfo">
+                            <a href="#" 
+                            title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                              </a>
+                        </div>
+                        <a href="#" class="inlist">
+                            <img src="../img/iconshop.png" alt="">
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                    <div class="listyu">
+                        <img src="../img/list.png" alt="">
+                        <div class="price_item clearFix">
+                            <i>￥</i>
+                            <em  class="big">180</em>
+                            <em class="small">.00</em>
+                            <span class="bid" style="display: none;">5</span>
+                        </div>
+                        <div class="listinfo">
+                            <a href="#" 
+                            title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                              </a>
+                        </div>
+                        <a href="#" class="inlist">
+                            <img src="../img/iconshop.png" alt="">
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                    <div class="listyu">
+                        <img src="../img/list.png" alt="">
+                        <div class="price_item clearFix">
+                            <i>￥</i>
+                            <em  class="big">180</em>
+                            <em class="small">.00</em>
+                        </div>
+                        <div class="listinfo">
+                            <a href="#" 
+                            title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                              </a>
+                        </div>
+                        <a href="#" class="inlist">
+                            <img src="../img/iconshop.png" alt="">
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                    <div class="listyu">
+                        <img src="../img/list.png" alt="">
+                        <div class="price_item clearFix">
+                            <i>￥</i>
+                            <em  class="big">180</em>
+                            <em class="small">.00</em>
+                        </div>
+                        <div class="listinfo">
+                            <a href="#" 
+                            title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                              </a>
+                        </div>
+                        <a href="#" class="inlist">
+                            <img src="../img/iconshop.png" alt="">
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                    <div class="listyu">
+                        <img src="../img/list.png" alt="">
+                        <div class="price_item clearFix">
+                            <i>￥</i>
+                            <em  class="big">180</em>
+                            <em class="small">.00</em>
+                        </div>
+                        <div class="listinfo">
+                            <a href="#" 
+                            title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                              </a>
+                        </div>
+                        <a href="#" class="inlist">
+                            <img src="../img/iconshop.png" alt="">
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                    <div class="listyu">
+                        <img src="../img/list.png" alt="">
+                        <div class="price_item clearFix">
+                            <i>￥</i>
+                            <em  class="big">180</em>
+                            <em class="small">.00</em>
+                        </div>
+                        <div class="listinfo">
+                            <a href="#" 
+                            title="【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装">
+                                【全球购】【法国勃西城堡酒庄】直采原瓶原装进口【橘城王子2014】干红750ml单瓶礼盒装
+                              </a>
+                        </div>
+                        <a href="#" class="inlist">
+                            <img src="../img/iconshop.png" alt="">
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                      
+                  </div>
+            </div>
+        </div>
+    
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="ftitle">
+                 <div>
+                     <img src="../img/zs.jpg" alt="">
+                     <div>
+                         <p>正品保障</p>
+                         <p>正品保障、提供发票</p>
+                     </div>
+                     <a href="#"></a>
+                 </div>
+                 <div>
+                  <img  src="../img/zs2.jpg" alt="">
+                  <div>
+                      <p>急速物流</p>
+                      <p>如约送货、送货入户</p>
+                  </div>
+                  <a href="#"></a>
+                 </div>
+                 <div>
+                  <img src="../img/zs3.jpg" alt="">
+                  <div>
+                      <p>售后无忧</p>
+                      <p>30天包退、365天包换</p>
+                  </div>
+                  <a href="#"></a>
+                 </div>
+                 <div>
+                  <img   src="../img/zs4.jpg" alt="">
+                  <div>
+                      <p>帮助中心</p>
+                      <p>您的购物指南</p>
+                  </div>
+                  <a href="#"></a>
+                 </div>
+                 <div>
+                  <img src="../img/zs.jpg" alt="">
+                  <div>
+                      <p>省心购</p>
+                      <p>专注好服务</p>
+                  </div>
+                  <a href="#"></a>
+                 </div>
+            </div>
+            <div class="ftnav">
+               <dl>
+                   <dt>购物指南</dt>
+                   <dd>
+                       <a href="#">免费注册</a>
+                   </dd>
+                   <dd>
+                      <a href="#">会员等级</a>
+                   </dd>
+                   <dd>
+                      <a href="#">常见问题</a>
+                   </dd>
+               </dl>
+               <dl>
+                  <dt>支付方式</dt>
+                  <dd>
+                      <a href="#">苏宁支付</a>
+                  </dd>
+                  <dd>
+                     <a href="#">网银支付</a>
+                  </dd>
+                  <dd>
+                     <a href="#">快捷支付</a>
+                  </dd>
+                  <dd>
+                      <a href="#">分期付款</a>
+                  </dd>
+                  <dd>
+                     <a href="#">货到付款</a>
+                  </dd>
+                  <dd>
+                     <a href="#">任性付支付</a>
+                  </dd>
+              </dl>
+              <dl>
+                  <dt>物流配送</dt>
+                  <dd>
+                      <a href="#">运费政策</a>
+                  </dd>
+                  <dd>
+                     <a href="#">物流配送服务</a>
+                  </dd>
+                  <dd>
+                     <a href="#">签收验货</a>
+                  </dd>
+                  <dd>
+                      <a href="#">物流查询</a>
+                  </dd>
+                  
+              </dl>
+              <dl>
+                  <dt>售后服务</dt>
+                  <dd>
+                      <a href="#">退换货政策</a>
+                  </dd>
+                  <dd>
+                     <a href="#">贵就赔</a>
+                  </dd>
+                  <dd>
+                     <a href="#">维修/安装</a>
+                  </dd>
+                  <dd>
+                      <a href="#">订单修改</a>
+                  </dd>
+                  <dd>
+                     <a href="#">退换货申请</a>
+                  </dd>
+                  <dd>
+                     <a href="#">我的发票</a>
+                  </dd>
+              </dl>
+              <dl>
+                  <dt>商家服务</dt>
+                  <dd>
+                      <a href="#">合作招商</a>
+                  </dd>
+                  <dd>
+                     <a href="#">培训中心</a>
+                  </dd>
+                  <dd>
+                     <a href="#">广告服务</a>
+                  </dd>
+                  <dd>
+                      <a href="#">商家帮助</a>
+                  </dd>
+                  <dd>
+                     <a href="#">服务市场</a>
+                  </dd>
+                  <dd>
+                     <a href="#">规则中心</a>
+                  </dd>
+              </dl>
+              <div class="info">
+                  <p class="im">身边苏宁</p>
+                  <a href="javascript:;">全国300多个城市，上万个门店和服务终端期待您的光临
+                      ,为您提供贴心的服务！</a>
+              </div>
+            </div>
+        </div>
+    </div>
+     <!-- 这里是尾部 -->
+    <div class="footend">
+        <div class="footend_inner">
+            <p class="p1">
+                <a href="#">苏宁互联</a>
+                <span>|</span>
+                <a href="#">苏宁金融</a>
+                <span>|</span>
+                <a href="#">苏宁支付</a>
+                <span>|</span>
+                <a href="#">PP视频</a>
+                <span>|</span>
+                <a href="#">红孩子</a>
+                <span>|</span>
+                <a href="#">苏宁物流</a>
+                <span>|</span>
+                <a href="#">手机苏宁 </a>
+                <span>|</span>
+                <a href="#">零售云</a>
+                <span>|</span>
+                <a href="#">苏宁云</a>
+                <span>|</span>
+                <a href="#">知识产权举报</a>
+                <span>|</span>
+                <a href="#">投资者关系 </a>
+                <span>|</span>
+                <a href="#">苏宁智能</a>
+                <span>|</span>
+            </p>
+            <p class="p2">
+              <a href="#">联系我们</a>
+              <span>|</span>
+              <a href="#">诚聘英才</a>
+              <span>|</span>
+              <a href="#">合作招商</a>
+              <span>|</span>
+              <a href="#">广告平台</a>
+              <span>|</span>
+              <a href="#">苏宁联盟</a>
+              <span>|</span>
+              <a href="#">苏宁招标</a>
+              <span>|</span>
+              <a href="#">隐私政策 </a>
+              <span>|</span>
+              <a href="#">用户体验提升计划</a>
+              <span>|</span>
+              <a href="#">股东会员认证</a>
+             </p>
+           
+             <p class="copy">
+                 <a href="#">Copyright© 2002-2020，
+                     苏宁易购集团股份有限公司版权所有</a>
+                     <a href="#">
+                         <span>|</span>
+                         <img data-lazy-src="img/gb.png" alt="">
+                        
+                         <a href="#">苏ICP备10207551号-4</a>
+                      </a>
+                      <a href="#">
+                          <span>|</span>
+                          <a href="#">苏ICP备10207551号-4</a>
+                      </a>
+  
+             </p>
+             <p class="copy">
+              <a href="#">合字B2-20180025</a>
+                  <a href="#">
+                      <span>|</span>
+                      合字A1.B1.B2-20180017
+                  </a>
+                   <a href="#">
+                       <span>|</span>
+                       <a href="#">出版物经营许可证新出发苏批字第A-243号</a>
+                   </a>
+                   <a href="#">
+                      <span>|</span>
+                      <a href="#">互联网药品信息服务资格证书</a>
+                  </a>
+                  <a href="#">
+                
+                      <a href="#" style="margin-left: -20px;">（苏）-非经营性-2016-0005</a>
+                  </a>
+  
+          </p>
+          <p class="copy">
+              <a href="#">经营证照</a>
+                  <a href="#">
+                      <span>|</span>
+                      网络文化经营许可证：苏网文〔2018〕10580-203号
+                  </a>
+                   <a href="#">
+                       <span>|</span>
+                       <a href="#">互联网违法和不良信息举报邮箱：kfpt-yy@cnsuning.com</a>
+                   </a>
+                   <a href="#">
+                      <span>|</span>
+                      <a href="#">举报电话：02566996699-865948</a>
+                  </a>
+                
+          </p>
+          <p class="copy">
+              <a href="#">医疗器械网络交易服务第三方平台备案凭证-（苏）网械平台备字（2018）第00052号</a>
+                  
+                
+          </p>
+          <p class="copy">
+              <a href="#">本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</a>
+                  
+                
+          </p>
+          <p class="map">
+              <img src="../img/wang.png" alt="">
+              <img src="../img/wang2.png" alt="">
+              <img src="../img/wang3.png" alt="">
+              <img src="../img/wang4.jpg" alt="">
+              <img src="../img/wang5.png" alt="">
+          </p>
+       
+        </div>
+    </div>
+    <div class="fixewd">返回顶部</div>
+</body>
+</html>

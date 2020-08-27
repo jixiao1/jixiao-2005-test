@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+     <link rel="stylesheet" href="../css/denglu.css">
+    
+    <script src="../js/denglu.js"></script>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script>
+        $(function(){
+          //  console.log($(".btn"));
+               $(".btn").click(function(){
+                   //console.log($(".username")[0].children[0].value);
+                   //console.log($(".username")[1].children[0].value);
+                   $.ajax({
+                       url:"../../login.php",
+                       methods:"post",
+                       data:{
+                          username:$(".username")[0].children[0].value,
+                          password:$(".username")[1].children[0].value
+                       },
+                       success:function(result){
+                         //  console.log(result);
+                           var obj=JSON.parse(result);
+                        //     console.log(obj);
+                        // //    console.log(obj['detail']);
+                        //    alert(obj['detail']);
+                        // console.log(result);
+                        // var obj=JSON.parse(result);
+                        // console.log(obj);
+                        // console.log(obj['detail']);
+                     //   alert(obj['detail']);
+                          if(obj['detail']==="登录成功"){
+                                setTimeout(function(){
+                                   window.location.href='./shopcart.html';
+                                },2000)
+                            
+                                setCookie("pw1",obj['detail'],7);
+                          }
+
+                           
+
+                       },
+                       error:function(meg){
+                           console.log(meg);
+                        
+                         
+                        
+                       }
+
+                   })
+                  
+               })
+        })
+    </script>
+</head>
+<body> 
+    <div id="header">
+          <a href="#"><img src="../img/02.png" alt=""></a>
+          <div class="bind_phone">
+            依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号绑定验证！
+            <a href="#"  style="color: #f60;">《隐私政策》</a>
+            已上线，将更有利于保护您的个人隐私。
+          </div>
+          <div class="header-write">
+             <i></i>
+              <a href="#">我想对“登录”提意见</a> 
+          </div>
+    </div>
+    <div class="main" style="background: url(../img/sq.jpg) center no-repeat">
+        <div class="login">
+            <div class="login_tab">
+                <a href="javascript:;" class="tab_item on">
+                    <span>扫码登录</span>
+                    
+                </a>
+                <a href="javascript:;" class="tab_item tab11">
+                    <span>账户登录</span>
+                   
+                </a>
+            </div>
+            <div class="content">
+                <div class="itemc" style="display: block;">
+                    <div class="tupian clearFix">
+                        <img src="../img/erwei.png" alt="" class="erwei">
+                        <img src="../img/scan.png" alt="">
+                    </div>
+                  
+                    <div class="dit">
+                    <div class="open">
+                        <i></i>
+                        <span>打开</span>
+                        <a href="#">苏宁易购APP</a>
+                        <span>扫码登录</span>
+                    </div>
+                    <div class="register1">注册 有惊喜 ></div>
+                    <div class="loginend">
+                        <div class="title">使用以下账号登录</div>
+                        <div class="tcon">
+                             <a href="#" class="qq">
+                                 <i></i>
+                                 <span>QQ</span>
+                             </a>
+                             <a href="#" class="qq weixin">
+                                <i></i>
+                                <span>微信</span>
+                            </a>
+                            <a href="#" class="qq zhifu">
+                                <i></i>
+                                <span>易付宝</span>
+                            </a>
+                            <a href="#" class="qq weibo">
+                                <i></i>
+                                <span>微博</span>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="itemFORM itemc" style="display: none;"> 
+                    <div class="username clearFix">
+                           
+                           <input type="text" placeholder="用户名" class="txt1">
+                           <i></i>
+
+                    </div>
+                    <div class="username password  clearFix" >
+                           
+                        <input type="password" placeholder="密码" class="txt1" >
+                        <i></i>
+
+                 </div>
+                 <div class="icon clearFix">
+                     <div class="icon-left">
+                         <a href="#">
+                            <i></i>
+                            <span>短信验证码登录</span>
+                         </a>
+                     </div>
+                     <div class="icon-right">
+                         <a href="#">
+                            <span>忘记密码？</span>
+                         </a>
+                     </div>
+                 </div>
+                 <a href="#" class="btn">登录</a>
+                 <div class="register1">注册 有惊喜 ></div>
+                    <div class="loginend">
+                       
+                        <!-- <div class="tcon">
+                             <a href="#" class="qq">
+                                 <i></i>
+                                 <span>QQ</span>
+                             </a>
+                             <a href="#" class="qq weixin">
+                                <i></i>
+                                <span>微信</span>
+                            </a>
+                            <a href="#" class="qq zhifu">
+                                <i></i>
+                                <span>易付宝</span>
+                            </a>
+                            <a href="#" class="qq weibo">
+                                <i></i>
+                                <span>微博</span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footend_inner">
+        <p class="p1">
+            <a href="#">苏宁互联</a>
+            <span>|</span>
+            <a href="#">苏宁金融</a>
+            <span>|</span>
+            <a href="#">苏宁支付</a>
+            <span>|</span>
+            <a href="#">PP视频</a>
+            <span>|</span>
+            <a href="#">红孩子</a>
+            <span>|</span>
+            <a href="#">苏宁物流</a>
+            <span>|</span>
+            <a href="#">手机苏宁 </a>
+            <span>|</span>
+            <a href="#">零售云</a>
+            <span>|</span>
+            <a href="#">苏宁云</a>
+            <span>|</span>
+            <a href="#">知识产权举报</a>
+            <span>|</span>
+            <a href="#">投资者关系 </a>
+            <span>|</span>
+            <a href="#">苏宁智能</a>
+            <span>|</span>
+        </p>
+        <p class="p2">
+          <a href="#">联系我们</a>
+          <span>|</span>
+          <a href="#">诚聘英才</a>
+          <span>|</span>
+          <a href="#">合作招商</a>
+          <span>|</span>
+          <a href="#">广告平台</a>
+          <span>|</span>
+          <a href="#">苏宁联盟</a>
+          <span>|</span>
+          <a href="#">苏宁招标</a>
+          <span>|</span>
+          <a href="#">隐私政策 </a>
+          <span>|</span>
+          <a href="#">用户体验提升计划</a>
+          <span>|</span>
+          <a href="#">股东会员认证</a>
+         </p>
+       
+         <p class="copy">
+             <a href="#">Copyright© 2002-2020，
+                 苏宁易购集团股份有限公司版权所有</a>
+                 <a href="#">
+                     <span>|</span>
+                     <img data-lazy-src="../img/gb.png" alt="">
+                    
+                     <a href="#">苏ICP备10207551号-4</a>
+                  </a>
+                  <a href="#">
+                      <span>|</span>
+                      <a href="#">苏ICP备10207551号-4</a>
+                  </a>
+
+         </p>
+         <p class="copy">
+          <a href="#">合字B2-20180025</a>
+              <a href="#">
+                  <span>|</span>
+                  合字A1.B1.B2-20180017
+              </a>
+               <a href="#">
+                   <span>|</span>
+                   <a href="#">出版物经营许可证新出发苏批字第A-243号</a>
+               </a>
+               <a href="#">
+                  <span>|</span>
+                  <a href="#">互联网药品信息服务资格证书</a>
+              </a>
+              <a href="#">
+            
+                  <a href="#" style="margin-left: -20px;">（苏）-非经营性-2016-0005</a>
+              </a>
+
+      </p>
+      <p class="copy">
+          <a href="#">经营证照</a>
+              <a href="#">
+                  <span>|</span>
+                  网络文化经营许可证：苏网文〔2018〕10580-203号
+              </a>
+               <a href="#">
+                   <span>|</span>
+                   <a href="#">互联网违法和不良信息举报邮箱：kfpt-yy@cnsuning.com</a>
+               </a>
+               <a href="#">
+                  <span>|</span>
+                  <a href="#">举报电话：02566996699-865948</a>
+              </a>
+            
+      </p>
+      <p class="copy">
+          <a href="#">医疗器械网络交易服务第三方平台备案凭证-（苏）网械平台备字（2018）第00052号</a>
+              
+            
+      </p>
+      <p class="copy">
+          <a href="#">本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</a>
+              
+            
+      </p>
+      <p class="map">
+          <img src="../img/wang.png" alt="">
+          <img src="../img/wang2.png" alt="">
+          <img src="../img/wang3.png" alt="">
+          <img src="../img/wang4.jpg" alt="">
+          <img src="../img/wang5.png" alt="">
+      </p>
+   
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,278 @@
+html,body{
+    background: #f2f2f2;
+    color: #222;
+    position: relative;
+}
+.header{
+    width: 990px;
+    height: 88px;
+    margin: 0 auto;
+}
+.header .logo{
+    float: left;
+    width: 190px;
+    height: 100%;
+    margin-right: 24px;
+    background: url(../img/02.png) no-repeat;
+}
+.header .hunaying{
+    float: left;
+    font-size: 18px;
+    color: #666666;
+    line-height: 88px;
+    width: 72px;
+    height: 88px;
+    text-align: center;
+}
+.header>a{
+    float:right;
+    margin-top: 63px;
+    font-size: 12px;
+    color: #333333;
+}
+.header>a:hover{
+    color: #ff6600;
+}
+.main{
+    width: 990px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-top: 3px solid #f90;
+    background: #fff;
+    padding: 55px 0;
+    height: 340px;
+}
+.content{
+    width: 390px;
+    height: 180px;
+    margin: 0 305px;
+  
+}
+.content form{
+    
+    display: flex;
+    flex-direction: column;
+}
+.content form div{
+    width: 390px;
+    height: 30px;
+    display: flex;
+   
+    margin: 10px 0;
+    line-height: 30px;
+    text-align: center;
+
+    
+}
+.content form div span{
+    font-size: 14px;
+    color: #333333;
+}
+.content form div input{
+    width: 320px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #eeeeee;
+    outline: none;
+    box-sizing: border-box;
+    margin-left: 10px;
+
+}
+.content form div input#password{
+    margin-left: 10px;
+    position: relative;
+    left: 15px;
+    top: 0;
+}
+.content form>span{
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    top: 8px;
+    left: 40px;
+    font-size: 12px;
+    color: red;
+    opacity: .6;
+    display: block;
+}
+.content form>#zhuce{
+    width: 390px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #f60;
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.mheade i{
+    float: left;
+    width: 19px;
+    height: 17px;
+    margin-right: 6px;
+    background: url(../img/sprite1.png) no-repeat;
+    background-position: -75px -93px;
+    display: block;
+}
+.mheade em{
+   font-style: normal;
+   color: #f40;
+
+}
+.mheade{
+    color: #222;
+    font-size: 14px;
+    width: 380px;
+    height: 17px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.iconv{
+    width: 120px;
+    height: 21px;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+.iconv i{
+    float: left;
+    width: 17px;
+    height: 15px;
+    background: url(../img/sprite1.png) no-repeat;
+    background-position: -141px -93px;
+    margin: 3px 5px 0 0;
+}
+.iconv span{
+    color:#f60;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.footend_inner{
+     width: 990px;
+     height: px;
+    margin:  0 auto;
+     background-color: #ffffff;
+     padding-top: 15px;
+     text-align: center;
+     
+}
+.footend_inner .p1{
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    
+}
+.footend_inner .p1 a,.footend_inner .p2 a{
+    font-size: 12px;
+    color: #666666;
+    margin: 0 5px;
+
+}
+.footend_inner .p2{
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.footend_inner .copy{
+    width: 990px;
+    height: 25px;
+    text-align: center;
+    margin-top:5px;
+}
+.footend_inner .copy a{
+    font-size: 12px;
+    color: #999999;
+    margin: 0 3px;
+}
+.footend_inner .copy img{
+    margin-left: 3px;
+}
+.footend_inner .map{
+    display: flex;
+    margin: 0 auto;
+    width: 990px;
+    height: 30px;
+    justify-content: center;
+}
+.footend_inner .map img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 20px;
+}
+.body{
+  position: fixed;
+  width: 610px;
+  height: 450px;
+   left: 320px;
+   top: 92px;
+  z-index: 99;
+  background-color: black;
+  opacity: 1;
+ 
+}
+.content_body{
+    position: absolute;
+    width:605px;
+    height: 445px;
+    background-color: #ffffff;
+   
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 20px;
+    box-sizing: border-box;
+ 
+}
+.content_tile{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: inset 0 -1px 0 0 #ddd;
+}
+.content_tile>span{
+   
+  float: left;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 700;
+}
+.content_tile>a{
+    float: right;
+    width: 14px;
+    height: 12px;
+    margin-top: 14px;
+    background: url(../img/sprite1.png) no-repeat;
+    cursor: pointer;
+    background-position: -163px -93px;
+}
+.content_btent>p{
+    font-size: 12px;
+    color: #333;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.agree-btn{
+    display: block;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-align: center;
+    background: #f60;
+    font-size: 14px;
+    color: #fff;
+    margin: 6px auto 0;
+}
+
+
